@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Sidebar container */
+.sidenav {
+    height: 100vh;
+    width: 60px; /* Collapsed width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+/* Sidebar buttons */
+.sidenav a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidenav a:hover {
+    width: 220px;  /* Increased width */
+    height: 60px;  /* Increased height */
+    padding: 20px 0;  /* Adjust padding */
+    font-size: 24px;  /* Larger text */
+    text-align: center;
+    transform: scale(1.1); /* Slight scaling effect */
+}
+
+
+/* Colors for the buttons */
+.sidenav a:nth-child(1) { background-color: #2ea44f; }
+.sidenav a:nth-child(2) { background-color: #2196F3; }
+.sidenav a:nth-child(3) { background-color: #F44336; }
+.sidenav a:nth-child(4) { background-color: #4d4d4d; }
+
+
+/* Main content */
+.main {
+    margin-left: 80px;
+    padding: 20px;
+    flex: 1;
+}
+
